@@ -1,34 +1,4 @@
-# Gilded Rose
 
-This is the Gilded Rose kata in JavaScript with Jest
-
-## Getting started
-
-Install dependencies
-
-```sh
-npm install
-```
-
-## Running tests
-
-To run all tests
-
-```sh
-npm test
-```
-
-To run all tests in watch mode
-
-```sh
-npm run test:watch
-```
-
-To generate test coverage report
-
-```sh
-npm run test:coverage
-```
 
 ======================================
 Gilded Rose Requirements Specification
@@ -68,3 +38,46 @@ for you).
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a
 legendary item and as such its Quality is 80 and it never alters.
+
+---------------------------------
+
+PLAN
+
+- Go through code and write tests for the functions it already has.
+- Restructure and refactor it with DRY in mind. Split into each type of item and shop class.
+- Then add in conjured item.
+
+Classes currently:
+ - Item and Shop in one file.
+
+Plan to have:
+ - Aged brie
+ - Sulfuras
+ - Backstage passes
+ - Conjured
+ - Shop 
+
+
+Shop class
+- With update quality function
+
+Item Class
+- With sellin and quality values properties.
+-
+Aged brie class
+- With sellin and quality values properties.
+- actually increases in Quality the older it gets
+
+Sulfuras class
+- With sellin and quality values properties.
+- being a legendary item, never has to be sold or decreases in Quality
+- "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters.
+
+Backstage passes class
+- With sellin and quality values properties.
+- like aged brie, increases in Quality as its SellIn value approaches;
+- Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but  Quality drops to 0 after the concert
+
+Conjured class
+- With sellin and quality values properties.
+- "Conjured" items degrade in Quality twice as fast as normal items

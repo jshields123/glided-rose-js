@@ -42,9 +42,8 @@ legendary item and as such its Quality is 80 and it never alters.
 ---------------------------------
 
 PLAN
-
-- Go through code and write tests for the functions it already has.
 - Restructure and refactor it with DRY in mind. Split into each type of item and shop class.
+- Go through code and write tests for the functions it already has.
 - Then add in conjured item.
 
 Classes currently:
@@ -55,29 +54,29 @@ Plan to have:
  - Sulfuras
  - Backstage passes
  - Conjured
- - Shop 
+ - Shop
 
 
 Shop class
 - With update quality function
 
 Item Class
-- With sellin and quality values properties.
+- With SellIn and quality values properties.
 -
 Aged brie class
-- With sellin and quality values properties.
+- With SellIn and quality values properties.
 - actually increases in Quality the older it gets
 
 Sulfuras class
-- With sellin and quality values properties.
+- With SellIn and quality values properties.
 - being a legendary item, never has to be sold or decreases in Quality
 - "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters.
 
 Backstage passes class
-- With sellin and quality values properties.
+- With SellIn and quality values properties.
 - like aged brie, increases in Quality as its SellIn value approaches;
 - Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but  Quality drops to 0 after the concert
 
 Conjured class
-- With sellin and quality values properties.
+- With SellIn and quality values properties.
 - "Conjured" items degrade in Quality twice as fast as normal items
